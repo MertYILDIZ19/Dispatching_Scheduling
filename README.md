@@ -3,6 +3,8 @@ This repository contains the simulation engine, analytical models, and preproces
 
 The goal of this project is to provide a systematic and reproducible methodology to decompose the performance gaps between classical queueing theory and real-world production traces.
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
 🚀 Overview
 We evaluate three core dispatching policies, all coupled with a First-Come-First-Served (FCFS) local scheduling policy:
 
