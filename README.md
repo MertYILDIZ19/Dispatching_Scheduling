@@ -31,22 +31,22 @@ Alibaba Cluster Trace v2018: Alibaba GitHub Repository
 
 Setup: Once downloaded, update the data path variables in the provided Jupyter Notebooks to point to your local files.
 
-📂 Repository Structure & Usage
-🧪 Synthetic Validation
+📂 ## Repository Structure & Usage
+🧪 **Synthetic Validation**
 Data Requirement: No external data is required.
 
-File: Synthetic_Validation.ipynb
+File: Weibull_Workload_Model_Validation.ipynb
 
 Details: Arrivals and service times are generated directly in the notebook.
 
 Customization: You can easily modify the Coefficient of Variation (CoV) within the parameters cell to test different variability scenarios.
 
 📉 Real Workload Analysis
-Notebook 1 (Discrepancy Analysis): Focuses on the gap between analytical models (driven by the first two moments of IAT/Service times) and the raw data-driven simulation.
+**Discrepancy Analysis**: Focuses on the gap between analytical models (driven by the first two moments of IAT/Service times) and the raw data-driven simulation. Check: Model_Simulations_Original.ipynb
 
-Notebook 2 (Model Matching): Demonstrates how analytical models align with the simulation once the data is fully shuffled and extreme outliers are removed (as detailed in the paper).
+**Model Matching**: Demonstrates how analytical models align with the simulation once the data is fully shuffled and extreme outliers are removed (as detailed in the paper). Check: Model_Simulations_Matching.ipynb
 
-Task-Level Simulations: To reproduce task-level results, replace the input with task-level datasets. Note that Mean Response Time is always calculated at the Job level.
+**Task-Level Simulations**: To reproduce task-level results, replace the input with task-level datasets. Note that Mean Response Time is always calculated at the Job level.
 
 🔬 Methodology Reference
 The systematic decomposition methodology is the core of this research. It involves:
@@ -58,3 +58,13 @@ Replacing arrivals with a Poisson process.
 Shuffling service times.
 
 Trimming the top 0.1% of "elephant" jobs/tasks.
+
+🎓 Citation
+If you use this code or methodology in your research, please cite:
+
+@article{yildiz2025dispatching,
+  title={Dispatching Policies in Data Center Clusters: Insights from Google and Alibaba Workloads},
+  author={Yildiz, Mert and Rolich, Alexey and Baiocchi, Andrea},
+  journal={Performance Evaluation},
+  year={2026}
+}
