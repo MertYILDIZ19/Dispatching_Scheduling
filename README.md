@@ -27,9 +27,9 @@ The codebase is organized into two primary experimental tracks:
 
 Due to size and licensing restrictions, raw traces are not hosted here. Please download them from the official repositories:
 
-Google ClusterData v3 (2019): Google GitHub Repository
+Google ClusterData v3 (2019): [🔗 here](https://github.com/MertYILDIZ19/Google_cluster_usage_traces_v3_all_cells)
 
-Alibaba Cluster Trace v2018: Alibaba GitHub Repository
+Alibaba Cluster Trace v2018: [🔗 here](https://github.com/MertYILDIZ19/Alibaba_cluster_usage_traces_2018)
 
 Setup: Once downloaded, update the data path variables within the Jupyter Notebooks to point to your local files.
 
